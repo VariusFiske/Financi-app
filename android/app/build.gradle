@@ -1,0 +1,52 @@
+plugins {
+    id "com.android.application"
+    id 'com.google.gms.google-services' // Firebase plugin
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+android {
+    namespace = "com.example.testapp"
+    compileSdk = flutter.compileSdkVersion
+    ndkVersion = flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+
+defaultConfig {
+    applicationId = "com.financi.app"
+    minSdk = 23 // Cambia de 21 a 23
+    targetSdk = flutter.targetSdkVersion
+    versionCode = flutter.versionCode
+    versionName = flutter.versionName
+}
+
+
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.debug
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}
+
+dependencies {
+    // Firebase BOM (Bill of Materials) to manage versions of Firebase libraries
+    implementation platform('com.google.firebase:firebase-bom:32.0.0')
+
+    // Firebase Analytics (u otras según las que necesites)
+    implementation 'com.google.firebase:firebase-analytics'
+
+    // Añade otras dependencias de Firebase si las necesitas:
+    // implementation 'com.google.firebase:firebase-auth'
+    // implementation 'com.google.firebase:firebase-firestore'
+}

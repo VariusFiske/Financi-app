@@ -1,0 +1,218 @@
+body {
+    margin: 10px;
+  }
+  
+  .barras{
+    padding: 10px;
+    margin: 10px;
+    border: #3333334a solid 1px;
+    border-radius: 8px;
+    background-color: #83757550;
+    margin-left: 10px;
+    margin-right: 10px;
+    max-height: 500px;
+  }
+  
+  .historial{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    border: #3333334a solid 1px;
+    background-color: #83757550;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .montos{
+    padding: 80px;
+    margin: 20px;
+    border-radius: 8px;
+    border: #3333334a solid 1px;
+    background-color: #83757550;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .resumenes{
+    color: #000000;
+    padding: 25px;
+    margin: 20px;
+    border-radius: 8px;
+    border: #3333334a solid 1px;
+    background-color: #83757550;
+  }
+  
+  #grafico{
+    background-color: #83757550;
+  }
+  .card{
+    padding: 10px;
+    margin: 20px;
+    border: #3333334a solid 1px;
+  
+  }
+  
+  .img-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 10%;
+    background-color: #837575;
+    padding: 3px;
+  }
+  
+  /* Estilos del contenedor del accordion */
+  .accordion-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* Estilos de la cabecera del accordion */
+  .accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+  
+  /* Estilos del botón de la flecha */
+  .accordion-toggle {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Estilos del contenido del accordion (escondido por defecto) */
+  .accordion-content {
+    display: none;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  /* Estilos del formulario dentro del accordion */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label {
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  form input, form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  form button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #000000;
+  }
+  
+  /* Estilos para cuando el contenido del accordion está abierto */
+  .accordion-content.open {
+    display: block;
+  }
+  
+  .accordion-toggle.rotate {
+    transform: rotate(180deg); /* Rota la flecha hacia arriba */
+  }
+  
+  #newFieldContainer1, #newFieldContainer2, #newFieldContainer3,#newFieldContainer4{
+    display: none; /* Oculto inicialmente */
+  }
+  
+  #boton1 {
+    background-color: black;
+    color: white;
+    width: 40px;
+  }
+  
+  #botones {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  
+  .contenedor {
+    width: 100%; /* Ocupa el ancho completo de la pantalla */
+  
+    justify-content: space-between; /* Elementos separados horizontalmente */
+    align-items: flex-start; /* Alinea al inicio de la columna */
+    gap: 2%; /* Gap entre elementos como porcentaje */
+    flex-direction: row; /* Elementos en fila */
+    height: 120vh;
+    background-color: #f0f0f073;
+  }
+  
+  .chart-container {
+      position: relative;
+      height: 300px; /* Ajusta la altura según tus necesidades */
+    }
+    
+    canvas {
+      width: 100%;
+      height: 100%;
+    }
+  
+  .titulo{
+      background-color: beige;
+      padding: 6px;
+      text-align: center;
+      border-radius: 4px;
+  }
+  .titulo-con-imagen {
+    display: flex;
+    align-items: center;
+    font-size: 24px; /* Tamaño del texto */
+  }
+  
+  .icono {
+    width: 24px; /* Ancho de la imagen */
+    height: 24px; /* Alto de la imagen */
+    margin-right: 8px; /* Espacio entre la imagen y el texto */
+  }
+  
+  #historial .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  #historial .list-group-item {
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    color: #000000;
+  }
+  
+  #historial h4 {
+    font-weight: bold;
+    color: #000000;
+  }
+  
+  #botonguardar{
+    text-align: center;
+    margin-left: 170px;
+    margin-right: 170px;
+  }

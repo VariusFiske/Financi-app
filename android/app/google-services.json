@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "769266658540",
+    "project_id": "financi-e1b11",
+    "storage_bucket": "financi-e1b11.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:769266658540:android:d7d18233698bd88d2289c9",
+        "android_client_info": {
+          "package_name": "com.financi.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUTxWzNn4hnU1ltKFpqlq9B87uDUMrRAc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
